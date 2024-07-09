@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+}
+
+p {
+    margin: 5px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #c6c6c6;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#oldgram-logo {
+    width: 200px;
+}
+
+#instagram-logo {
+    width: 40px;
+    border-radius: 50%;
+}
+
+#render-profile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px; /* Add margin-top to account for the fixed header */
+}
+
+.post {
+    width: 90%;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.bold-p {
+    font-weight: bold;
+}
+
+.presentation-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    width: 100%;
+    margin: 40px 0;
+}
+
+.presentation-p {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.post-img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.actions {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center;
+    justify-content: start;
+}
+
+.actions button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.action-img {
+    width: 30px;
+    height: 30px;
+}
+
+.likes {
+    text-align: left;
+    margin: 0;
+    font-weight: bold;
+}
+
+.comment {
+    margin: 15px 0;
+}
+
+.heart-img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.heart-img.liked {
+    filter: invert(30%) sepia(88%) saturate(7481%) hue-rotate(346deg) brightness(106%) contrast(117%);
+    transform: scale(1.2);
+}
+
+.comments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    visibility: hidden;
+}
+
+.comments-section-visible {
+    visibility: visible;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.comment-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #3272ab;
+}
+
